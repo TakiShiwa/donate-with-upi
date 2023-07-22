@@ -60,7 +60,7 @@ If you have any questions, suggestions, or need support, feel free to [open an i
 
 ## Acknowledgments 🙏
 
-Every button is created under UPI guidelines, if you want to know more click [here.](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf)
+Every button is created under UPI guidelines, if you want to know more click [here.](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
 Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
 
 ## Donate 💖
