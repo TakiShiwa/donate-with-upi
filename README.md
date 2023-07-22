@@ -22,7 +22,7 @@ Here's a sneak peek at some of the buttons available in this repository:
 
 You can seamlessly use these buttons without having to clone the repository. Just follow the steps below to add them to your projects:
 
-1. **Choose a Button:** Browse the `button` directory to explore the SVG and PNG folder in there different UPI donation button designs available.
+1. **Choose a Button:** Browse the `button` directory to explore the SVG and PNG folder in different UPI donation button designs available.
 
 2. **Copy the Image URL:** Right-click on the button image you want to use and select "Copy Image Address" or "Copy Image URL," depending on your browser.
 
@@ -47,7 +47,7 @@ The button designs in this repository are carefully crafted to encourage and pro
 
 ## License 📝
 
-- I do not claim any copyright ownership of the UPI logo, UPI logo is copyrighted and trademarked property of [NPCI.](https://www.npci.org.in/)
+- The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). I do not claim any ownership of it.
 
 - These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
@@ -58,7 +58,7 @@ The button designs in this repository are carefully crafted to encourage and pro
 
 ## Acknowledgments 🙏
 
-- Every button is created under UPI guidelines, if you want to know more click [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
+- Every button is created under UPI guidelines. If you want to know more, click [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
 - Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
 
 ## Donate 💖
@@ -70,5 +70,4 @@ Your kind gesture of support is greatly appreciated! If you enjoyed this project
 
 ---
 
-Thank you for visiting the Donate with UPI Repository! I hope these buttons make it easier for your project to receive generous contributions.😊
-
+Thank you for visiting the Donate with UPI Repository! I hope these buttons make it easier for your project to receive generous contributions. 😊
