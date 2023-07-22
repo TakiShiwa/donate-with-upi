@@ -19,8 +19,8 @@ Seamless integration! Simply choose a button, copy its URL, and paste it into yo
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="72" alt="Button Preview" />
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="72" alt="Button Preview" />
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="72" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="72" alt="Button Preview" />
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-02-01.svg" height="72" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="72" alt="Button Preview" />
 
 </p>
 
