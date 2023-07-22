@@ -1,4 +1,4 @@
-# Donate with UPI - Handcrafted Button SVG and PNGs Repository 💸🤲
+# Donate with UPI - Handcrafted Button SVG and PNGs 💸🤲
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02-01.svg" alt="Donate with UPI" />
@@ -11,7 +11,7 @@ Welcome to the Donate with UPI - Handcrafted Button SVG and PNGs Repository! Her
 Here's a sneak peek at some of the buttons available in this repository:
 
 <p align="center">
-  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" alt="Button Preview" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="72" alt="Button Preview" />
 </p>
 
 ## How to Use 🛠️
