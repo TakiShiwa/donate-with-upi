@@ -53,7 +53,7 @@ These handcrafted UPI donation buttons are released under the [MIT License](LICE
 
 ## Contributing 🤝
 
-If you'd like to add more button designs or improve the existing ones, please open a pull request. Make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+If you'd like to add more button designs or improve the existing ones, make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
 
  ### Feedback and Support
 
