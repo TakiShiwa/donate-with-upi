@@ -12,6 +12,10 @@ Here's a sneak peek at some of the buttons available in this repository:
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="72" alt="Button Preview" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="72" alt="Button Preview" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="72" alt="Button Preview" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="72" alt="Button Preview" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-02-01.svg" height="72" alt="Button Preview" />
 </p>
 
 ## How to Use 🛠️
@@ -24,14 +28,14 @@ You can seamlessly use these buttons without having to clone the repository. Jus
 
 3. **Integrate the Button:** Now, simply paste the copied image URL into your project's README, website, or application. Use the markdown or HTML image syntax, depending on the format you prefer.
 
-   - Using Markdown:
+   ### Example 1: Using SVG:
      ```markdown
-     ![Donate with UPI](https://github.com/your-username/donate-with-upi/raw/main/buttons/donate_button.svg)
+     ![Donate with UPI](https://github.com/TakiShiwa/donate-with-upi/raw/main/buttons/donate_button.svg)
      ```
 
-   - Using HTML:
+   ### Example 2: Using PNG:
      ```html
-     <img src="https://github.com/your-username/donate-with-upi/raw/main/buttons/donate_button.png" alt="Donate with UPI" />
+     <img src="https://github.com/TakiShiwa/donate-with-upi/raw/main/buttons/donate_button.png" alt="Donate with UPI" />
      ```
 
 4. **Customization (Optional):** If you need to customize the button's appearance to match your project's theme or design, you can use any vector graphics editor to tweak the SVG files.
@@ -39,22 +43,6 @@ You can seamlessly use these buttons without having to clone the repository. Jus
 ## Button Designs 🎨
 
 The button designs in this repository are carefully crafted to encourage and promote UPI-based donations. Each button emphasizes the ease and simplicity of contributing to your cause, making it easier for potential donors to support your initiatives.
-
-## Examples 🌟
-
-Here are a few examples of how to use the buttons in your README or Markdown files:
-
-### Example 1: Using SVG
-
-```markdown
-![Donate with UPI](https://github.com/your-username/donate-with-upi/raw/main/buttons/donate_button.svg)
-```
-
-### Example 2: Using PNG
-
-```markdown
-![Donate with UPI](https://github.com/your-username/donate-with-upi/raw/main/buttons/donate_button.png)
-```
 
 ## License 📝
 
