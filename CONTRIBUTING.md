@@ -15,7 +15,7 @@ You can contribute in various ways, including:
 
 - Use SVG format for buttons
 - Keep the design minimal and visually appealing
-- Optimize SVG files for smaller size
+- Optimize SVG files for appropriate size and quality.
 
 ## License
 
