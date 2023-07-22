@@ -19,7 +19,7 @@ You can contribute in various ways, including:
 
 ## License
 
-Your contributions will be released under the [MIT License](LICENSE.md).
+Your contributions will be released under the [MIT License](LICENSE).
 
 ## Feedback and Support
 
