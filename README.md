@@ -22,7 +22,7 @@ Here's a sneak peek at some of the buttons available in this repository:
 
 You can seamlessly use these buttons without having to clone the repository. Just follow the steps below to add them to your projects:
 
-1. **Choose a Button:** Browse the `buttons` directory to explore the different UPI donation button designs available. Each button has its own folder containing both SVG and PNG versions.
+1. **Choose a Button:** Browse the `button` directory to explore the different UPI donation button designs available. Each button has its own folder containing both SVG and PNG versions.
 
 2. **Copy the Image URL:** Right-click on the button image you want to use and select "Copy Image Address" or "Copy Image URL," depending on your browser.
 
