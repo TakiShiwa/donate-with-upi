@@ -53,11 +53,8 @@ These handcrafted UPI donation buttons are released under the [MIT License](LICE
 
 ## Contributing 🤝
 
-If you'd like to add more button designs or improve the existing ones, make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
-
- ### Feedback and Support
-
- If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). I'll be more than happy to help!
+- If you'd like to add more button designs or improve the existing ones, make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+- If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). I'll be more than happy to help!
 
 ## Acknowledgments 🙏
 
