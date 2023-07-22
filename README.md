@@ -57,7 +57,7 @@ If you'd like to add more button designs or improve the existing ones, please op
 
  ### Feedback and Support
 
- If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). I'm always happy to help!
+ If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). I'll be more than happy to help!
 
 ## Acknowledgments 🙏
 
