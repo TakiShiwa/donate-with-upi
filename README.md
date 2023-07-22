@@ -1,4 +1,4 @@
-# Donate with UPI - Button SVG and PNGs 💸
+# Donate with UPI 💸
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02-01.svg" height="100" alt="Donate with UPI" />
