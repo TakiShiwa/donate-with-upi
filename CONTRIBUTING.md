@@ -14,7 +14,6 @@ You can contribute to this repository in various ways, including but not limited
 
 4. **Bug Reports and Feedback:** Should you encounter any bugs, have suggestions for new features, or wish to provide feedback, please open an issue so that it can be addressed by the maintainers.
 
-
 ## Code Style and Quality
 
 When adding or modifying the button designs, please ensure the following:
