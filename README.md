@@ -66,6 +66,10 @@ Thanks to andreostrovsky's design language for [PayPal buttons](https://github.c
 ## Donate 💖
 
 Your kind gesture of support is greatly appreciated! If you enjoyed this project or simply want to show your generosity, consider buying me a coffee. ☕
+
+<a href="https://github.com/TakiShiwa/Themes/assets/137756384/02a87419-84ec-4ea8-a910-20f92e19259a"><img src="https://github.com/TakiShiwa/Themes/blob/main/Buttons/UPI-teal.svg" height="40"></a>
+<a href="https://www.paypal.me/TakiShiwa"><img src="https://github.com/TakiShiwa/Themes/blob/main/Buttons/blue.svg" height="40"></a>
+
 ---
 
 Thank you for visiting the Donate with UPI - Handcrafted Button SVG and PNGs Repository! I hope these buttons make it easier for your project to receive generous contributions.😊
