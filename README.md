@@ -22,11 +22,12 @@ Here's a sneak peek at some of the buttons available in this repository:
 
 You can seamlessly use these buttons without having to clone the repository. Just follow the steps below to add them to your projects:
 
-1. **Choose a Button:** Browse the `button` directory to explore the different UPI donation button designs available. Each button has its own folder containing both SVG and PNG versions.
+1. **Choose a Button:** Browse the `button` directory to explore the SVG and PNG folder in there different UPI donation button designs available.
 
 2. **Copy the Image URL:** Right-click on the button image you want to use and select "Copy Image Address" or "Copy Image URL," depending on your browser.
 
 3. **Integrate the Button:** Now, simply paste the copied image URL into your project's README, website, or application. Use the markdown or HTML image syntax, depending on the format you prefer.
+Use SVG format as it's better quality than PNG.
 
    ### Example 1: Using SVG:
    ```markdown
@@ -38,7 +39,7 @@ You can seamlessly use these buttons without having to clone the repository. Jus
    <img src="https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/Button/PNG/donate_button.png" alt="Donate with UPI" />
    ```
 
-4. **Customization (Optional):** If you need to customize the button's appearance to match your project's theme or design, you can use any vector graphics editor to tweak the SVG files.
+5. **Customization (Optional):** If you need to customize the button's appearance to match your project's theme or design, you can use any vector graphics editor to tweak the SVG files.
 
 ## Button Designs 🎨
 
