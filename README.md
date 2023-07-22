@@ -23,11 +23,11 @@ Seamless integration! Simply choose a button, copy its URL, and paste it into yo
 
 ## License 📝
 
-The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required.
+The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
 ## Contributing 🤝
 
-Want to contribute? Follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) and feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues) for suggestions or support. However, a credit to this repository is highly appreciated.
+Want to contribute? Follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) and feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues) for suggestions or support. 
 
 ## Acknowledgments 🙏
 
