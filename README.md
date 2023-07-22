@@ -35,7 +35,7 @@ You can seamlessly use these buttons without having to clone the repository. Jus
 
    ### Example 2: Using PNG:
      ```html
-     <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/PNG/donate_button.png" alt="Donate with UPI" />
+     <img src="https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/Button/PNG/donate_button.png" alt="Donate with UPI" />
      ```
 
 4. **Customization (Optional):** If you need to customize the button's appearance to match your project's theme or design, you can use any vector graphics editor to tweak the SVG files.
