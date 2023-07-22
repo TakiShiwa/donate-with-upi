@@ -47,9 +47,9 @@ The button designs in this repository are carefully crafted to encourage and pro
 
 ## License 📝
 
-I do not claim any copyright ownership of the UPI logo, UPI logo is copyrighted and trademarked property of [NPCI.](https://www.npci.org.in/)
+- I do not claim any copyright ownership of the UPI logo, UPI logo is copyrighted and trademarked property of [NPCI.](https://www.npci.org.in/)
 
-These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
+- These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
 ## Contributing 🤝
 
@@ -58,8 +58,8 @@ These handcrafted UPI donation buttons are released under the [MIT License](LICE
 
 ## Acknowledgments 🙏
 
-Every button is created under UPI guidelines, if you want to know more click [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
-Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
+- Every button is created under UPI guidelines, if you want to know more click [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
+- Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
 
 ## Donate 💖
 
