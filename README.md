@@ -61,7 +61,7 @@ If you'd like to add more button designs or improve the existing ones, please op
 
 ## Acknowledgments 🙏
 
-Every button is created under UPI guidelines, if you want to know more click [here.](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
+Every button is created under UPI guidelines, if you want to know more click [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
 Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
 
 ## Donate 💖
@@ -73,5 +73,5 @@ Your kind gesture of support is greatly appreciated! If you enjoyed this project
 
 ---
 
-Thank you for visiting the Donate with UPI - Handcrafted Button SVG and PNGs Repository! I hope these buttons make it easier for your project to receive generous contributions.😊
+Thank you for visiting the Donate with UPI Repository! I hope these buttons make it easier for your project to receive generous contributions.😊
 
