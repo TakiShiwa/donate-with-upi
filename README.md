@@ -29,14 +29,14 @@ You can seamlessly use these buttons without having to clone the repository. Jus
 3. **Integrate the Button:** Now, simply paste the copied image URL into your project's README, website, or application. Use the markdown or HTML image syntax, depending on the format you prefer.
 
    ### Example 1: Using SVG:
-     ```markdown
+   ```markdown
      ![Donate with UPI](https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/donate_button.svg)
-     ```
+   ```
 
    ### Example 2: Using PNG:
-     ```html
+   ```html
      <img src="https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/Button/PNG/donate_button.png" alt="Donate with UPI" />
-     ```
+   ```
 
 4. **Customization (Optional):** If you need to customize the button's appearance to match your project's theme or design, you can use any vector graphics editor to tweak the SVG files.
 
@@ -46,20 +46,27 @@ The button designs in this repository are carefully crafted to encourage and pro
 
 ## License 📝
 
+I do not claim any copyright ownership of the UPI logo, UPI logo is copyrighted and trademarked properties of NPCI.
+
 These handcrafted UPI donation buttons are released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
 ## Contributing 🤝
 
-We welcome contributions from the community! If you'd like to add more button designs or improve the existing ones, please open a pull request. Make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+If you'd like to add more button designs or improve the existing ones, please open a pull request. Make sure to follow the contribution guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Feedback and Support 💌
 
-If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). We are always happy to help!
+If you have any questions, suggestions, or need support, feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues). I'm always happy to help!
 
 ## Acknowledgments 🙏
 
-A big thank you to all the contributors who helped create and improve the UPI donation button designs in this repository.
+Every button is created under UPI guidelines, if you want to know more click [here.](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf)
+Thanks to andreostrovsky's design language for [PayPal buttons](https://github.com/andreostrovsky/donate-with-paypal/tree/master), which served as the inspiration for these UPI donation buttons.
 
+## Donate 💖
+
+Your kind gesture of support is greatly appreciated! If you enjoyed this project or simply want to show your generosity, consider buying me a coffee. ☕
 ---
 
-Thank you for visiting the Donate with UPI - Handcrafted Button SVG and PNGs Repository! We hope these buttons make it easier for your project to receive generous contributions. Together, let's make a positive impact! 😊
+Thank you for visiting the Donate with UPI - Handcrafted Button SVG and PNGs Repository! I hope these buttons make it easier for your project to receive generous contributions.😊
+
