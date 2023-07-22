@@ -19,11 +19,8 @@ You can contribute in various ways, including:
 
 ## License
 
+The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/).
 Your contributions will be released under the [MIT License](LICENSE).
-
-## Feedback and Support
-
-For questions or assistance, [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues).
 
 ## Acknowledgments
 
