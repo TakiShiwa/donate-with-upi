@@ -22,10 +22,6 @@ You can contribute in various ways, including:
 The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/).
 Your contributions will be released under the [MIT License](LICENSE).
 
-## Acknowledgments
-
-Thank you for your interest in contributing to this project. Your efforts make the developer community more vibrant and creative.
-
 ---
 
-Let's work together to enhance the beauty and impact of these UPI donation buttons! 🙏💖
+Thank you for your interest in contributing to this project.Let's work together to enhance the beauty and impact of these UPI donation buttons! 🙏💖
