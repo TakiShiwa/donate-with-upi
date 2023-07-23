@@ -10,7 +10,7 @@ Welcome to the Donate with UPI Button Repository! Here, you'll find a collection
 
 ## How to Use 🛠️
 
-Seamless integration! Simply choose a button, copy its URL, and paste it into your project's README, website, or application using markdown or HTML image syntax. Use SVG format for better quality.
+Seamless integration! Simply choose a button from `Button` , copy its URL, and paste it into your project's README, website, or application using markdown or HTML image syntax. Use SVG format for better quality.
 
 ### Example Buttons
 <p align="center:">
