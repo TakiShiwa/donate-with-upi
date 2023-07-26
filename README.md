@@ -33,7 +33,7 @@ Want to contribute? Follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) 
 ## Acknowledgments 🙏
 
 - Every button is created under UPI guidelines. Learn more [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
-- Thanks to [andreostrovsky's design](https://github.com/andreostrovsky/donate-with-paypal/tree/master) language for inspiring these UPI donation buttons.
+- Thanks to [andreostrovsky's](https://github.com/andreostrovsky/donate-with-paypal/tree/master) design language for inspiring these UPI donation buttons.
 
 ## Donate 💖
 
