@@ -1,6 +1,6 @@
 # Donate with UPI 💸
 
-![Files](https://img.shields.io/badge/Files-https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fmain%2FButton%2FSVG-blue)
+![Files](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fgh-pages%2Fbadge.json&query=%24.message)
 
 
 <p align="center">
