@@ -13,11 +13,7 @@ jobs:
 
       - name: Count Files
         id: count_files
-        run: echo "::set-output name=count::$(find . -type f | wc -l)"
+        run: echo "::set-output name=count::$(find Button/SVG -type f | wc -l)"
 
       - name: Update Badge
-        uses: shieldsio/github-action@master
-        with:
-          path: ${{ github.repository }} # This will point to the root directory of your repository
-          key: files
-          value: ${{ steps.count_files.outputs.count }}
+        run: curl -X POST "https://api.github.com/repos/${{ github.repository }}/dispatches" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" -d '{"event_type": "update-badge"}'
