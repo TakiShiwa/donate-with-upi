@@ -1,4 +1,5 @@
 name: Update File Count Badge
+
 on:
   push:
     branches:
@@ -13,7 +14,10 @@ jobs:
 
       - name: Count Files
         id: count_files
-        run: echo "::set-output name=count::$(find Button/SVG -type f | wc -l)"
+        run: |
+          chmod +x count_files.sh
+          FILE_COUNT=$(./count_files.sh)
+          echo "::set-output name=count::$FILE_COUNT"
 
       - name: Update Badge
         run: curl -X POST "https://api.github.com/repos/${{ github.repository }}/dispatches" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" -d '{"event_type": "update-badge"}'
