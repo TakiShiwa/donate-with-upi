@@ -3,7 +3,7 @@ name: Update File Count Badge
 on:
   push:
     branches:
-      - main # Change this to your default branch name (e.g., master, main)
+      - main #(e.g., master, main)
 
 jobs:
   update-badge:
