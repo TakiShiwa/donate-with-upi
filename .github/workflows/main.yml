@@ -1,0 +1,23 @@
+name: Update File Count Badge
+on:
+  push:
+    branches:
+      - main # Change this to your default branch name (e.g., master, main)
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Count Files
+        id: count_files
+        run: echo "::set-output name=count::$(find . -type f | wc -l)"
+
+      - name: Update Badge
+        uses: shieldsio/github-action@master
+        with:
+          path: ${{ github.repository }} # This will point to the root directory of your repository
+          key: files
+          value: ${{ steps.count_files.outputs.count }}
