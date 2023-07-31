@@ -43,7 +43,8 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+        run: |
+          echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
 
       - name: Store Badge JSON
         run: |
