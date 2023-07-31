@@ -1,23 +1,26 @@
-name: Generate Badge
+name: Update File Count
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
     steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+
       - name: Count Files
         run: |
           directory_to_count="Button/SVG"
           file_count=$(find "$directory_to_count" -type f | wc -l)
           echo "{\"schemaVersion\": 1, \"label\": \"Files\", \"message\": \"$file_count\", \"color\": \"blue\"}" > files_count.json
-      - name: Create Badge
-        id: create_badge
+
+      - name: Commit Files
         run: |
-          echo "::set-output name=badge::$(shields.io endpoint --file files_count.json)"
-      - name: Display Badge
-        run: |
-          echo "Badge: ${{ steps.create_badge.outputs.badge }}"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add files_count.json
+          git commit -m "Update file count [skip ci]"
+          git push
