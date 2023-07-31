@@ -27,7 +27,7 @@ jobs:
           echo "const axios = require('axios');" >> index.js
           echo "const app = express();" >> index.js
           echo "const PORT = process.env.PORT || 3000;" >> index.js
-          echo "const GH_TOKEN = '${{ secrets.GH_TOKEN }}';" >> index.js
+          echo "const GITHUB_TOKEN = '${{ secrets.GITHUB_TOKEN }}';" >> index.js
           echo "const REPO_OWNER = 'TakiShiwa';" >> index.js  # Replace with your GitHub username
           echo "const REPO_NAME = 'donate-with-upi';" >> index.js  # Replace with your GitHub repository name
           echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
@@ -71,8 +71,6 @@ jobs:
           path: badges
 
       - name: Commit and Push changes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -80,3 +78,5 @@ jobs:
           git add .
           git commit -m "Add badge.json" || echo "No changes to commit"
           git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
