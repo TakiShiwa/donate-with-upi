@@ -65,8 +65,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: main
+          ref: add-badge
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Download Badge JSON
+        uses: actions/download-artifact@v2
+        with:
+          name: badges
+          path: badges
 
       - name: Delete Add-Badge Branch (Pre-Step)
         run: |
