@@ -73,9 +73,9 @@ jobs:
       - name: Set up Git credentials
         run: |
           git config --global user.email "action@github.com"
-          git config --global user.name ${{ env.GITHUB_ACTOR }}
+          git config --global user.name "${{ github.actor }}"
           git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
-
+         
       - name: Create and Push Branch
         run: |
           git checkout -b add-badge
