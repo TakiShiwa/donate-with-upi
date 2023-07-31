@@ -27,7 +27,7 @@ jobs:
           echo "const axios = require('axios');" >> index.js
           echo "const app = express();" >> index.js
           echo "const PORT = process.env.PORT || 3000;" >> index.js
-          echo "const GITHUB_TOKEN = '${{ secrets.PERSONAL_ACCESS_TOKEN }}';" >> index.js
+          echo "const GITHUB_TOKEN = '${{ secrets.GITHUB_TOKEN }}';" >> index.js
           echo "const REPO_OWNER = 'TakiShiwa';" >> index.js
           echo "const REPO_NAME = 'donate-with-upi';" >> index.js
           echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
@@ -47,25 +47,7 @@ jobs:
         run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
 
       - name: Use Badge Data
-        id: badge_data
         run: echo ${{ steps.create_badge.outputs.badge_data }} > file-count.json
 
       - name: Display Badge Data
         run: cat file-count.json
-        
-      - name: Create Test Branch
-        run: git checkout -b test
-
-      - name: Configure Git
-        run: |
-          git config user.name "TakiShiwa"
-          git config user.email "judhistiram@protonmail.com"
-
-      - name: Commit and Push Changes
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        run: |
-          git add file-count.json
-          git commit -m "Add file-count.json"
-          git push origin test
-
