@@ -70,13 +70,20 @@ jobs:
           name: badges
           path: badges
 
-      - name: Commit and Push changes
+      - name: Create Branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          cp -R badges/* .  # Copy the contents of badges to the root of the repository
-          git add .
+          git checkout -b add-badge
+          git add badges
           git commit -m "Add badge.json" || echo "No changes to commit"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          git push origin add-badge
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add badge.json"
+          branch: "main"
+          title: "Add badge.json"
+          body: "This pull request adds the badge.json file to display the file count in the README."
