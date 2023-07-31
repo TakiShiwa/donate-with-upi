@@ -3,13 +3,11 @@ name: Update File Count Badge
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   update-badge:
     runs-on: ubuntu-latest
-    outputs:
-      file-count: ${{ steps.count_files.outputs.FILE_COUNT }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -23,8 +21,14 @@ jobs:
           echo "::set-output name=FILE_COUNT::$FILE_COUNT"
 
       - name: Update Badge
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          FILE_COUNT: ${{ needs.update-badge.outputs.file-count }}
         run: |
-          curl -X POST "https://api.github.com/repos/${{ github.repository }}/dispatches" \
-               -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
-               -H "Accept: application/vnd.github.v3+json" \
-               -d '{"event_type": "update-badge"}'
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout gh-pages
+          echo '{"message": "'"$FILE_COUNT"'"}' > badge.json
+          git add badge.json
+          git commit -m "Update file count badge: $FILE_COUNT files"
+          git push origin gh-pages
