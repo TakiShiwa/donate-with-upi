@@ -90,6 +90,11 @@ jobs:
           git checkout add-badge
           git fetch origin
           git merge origin/add-badge
+          git checkout -b new-add-badge
+          git add .
+          git commit -m "Your commit message"
+          git push origin new-add-badge
+  
 
       - name: Create Pull Request
         run: |
