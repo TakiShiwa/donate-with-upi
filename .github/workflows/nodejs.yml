@@ -43,11 +43,30 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        id: create_badge
         run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
 
-      - name: Use Badge Data
-        run: echo ::set-output name=badge_data::$(cat badge.json)
+      - name: Store Badge JSON
+        run: |
+          mkdir -p badges
+          mv badge.json badges/badge.json
 
-      - name: Display Badge Data
-        run: echo ${{ steps.create_badge.outputs.badge_data }}
+      - name: Commit Badge JSON
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add badges
+          git commit -m "Add badge.json" || echo "No changes to commit"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: ${{ github.ref }}
