@@ -43,8 +43,7 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        run: |
-          echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
+        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
 
       - name: Store Badge JSON
         run: |
@@ -110,4 +109,3 @@ jobs:
             "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
       - name: Display Badge JSON Content
         run: cat badges/badge.json
-
