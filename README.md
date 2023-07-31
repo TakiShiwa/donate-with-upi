@@ -1,6 +1,6 @@
 # Donate with UPI 💸
 
-![Files Count](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/count_files.sh)
+![Files Count](https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/count_files.sh)
 
 
 <p align="center">
