@@ -55,7 +55,7 @@ jobs:
         with:
           name: badges
           path: badges
-
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -70,20 +70,11 @@ jobs:
           name: badges
           path: badges
 
-      - name: Set up Git credentials
+      - name: Create and Push Branch
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Create Branch and Add Badge JSON
-        uses: zaripych/git-machete-action@v1
-        with:
-          base: "main"
-          head: "add-badge"
-
-      - name: Copy Badge JSON and Commit
-        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b add-badge
           mkdir -p badges
           cp badges/* .
           git add .
@@ -91,10 +82,14 @@ jobs:
           git push origin add-badge
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Add badge.json"
-          branch: "main"
-          title: "Add badge.json"
-          body: "This pull request adds the badge.json file to display the file count in the README."
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "title": "Add badge.json",
+              "body": "This pull request adds the badge.json file to display the file count in the README.",
+              "head": "add-badge",
+              "base": "main"
+            }' \
+            "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
