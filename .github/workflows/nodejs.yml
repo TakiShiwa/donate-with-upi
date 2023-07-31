@@ -55,8 +55,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "Your Username"
-          git config user.email "your.email@example.com"
+          git config user.name "TakiShiwa"
+          git config user.email "judhistiram@protonmail.com"
 
       - name: Commit and Push Changes
         run: |
