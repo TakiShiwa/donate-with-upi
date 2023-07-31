@@ -7,4 +7,4 @@ DIRECTORY_PATH="Button/SVG"
 FILE_COUNT=$(find "$DIRECTORY_PATH" -type f | wc -l)
 
 # Output the file count
-echo "$FILE_COUNT">> $GITHUB_ENV
+echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
