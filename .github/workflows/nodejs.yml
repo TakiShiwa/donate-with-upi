@@ -70,10 +70,14 @@ jobs:
           name: badges
           path: badges
 
+      - name: Set up Git credentials
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name ${{ env.GITHUB_ACTOR }}
+          git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Create and Push Branch
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git checkout -b add-badge
           mkdir -p badges
           cp badges/* .
