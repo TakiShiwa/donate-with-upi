@@ -1,7 +1,6 @@
 # Donate with UPI 💸
 
-![Files Count](https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/count_files.sh)
-
+<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub.com%2FTakiShiwa%2Fdonate-with-upi%2Fblob%2Fmain%2F.github%2Fworkflows%2Fgenerate_badge.yml&style=for-the-badge&label=No.%20of%20Buttons&labelColor=1e1e2e&color=cba6f7">
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
