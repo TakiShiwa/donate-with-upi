@@ -1,0 +1,23 @@
+name: Generate Badge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Count Files
+        run: |
+          directory_to_count="Button/SVG"
+          file_count=$(find "$directory_to_count" -type f | wc -l)
+          echo "{\"schemaVersion\": 1, \"label\": \"Files\", \"message\": \"$file_count\", \"color\": \"blue\"}" > files_count.json
+      - name: Create Badge
+        id: create_badge
+        run: |
+          echo "::set-output name=badge::$(shields.io endpoint --file files_count.json)"
+      - name: Display Badge
+        run: |
+          echo "Badge: ${{ steps.create_badge.outputs.badge }}"
