@@ -50,6 +50,12 @@ jobs:
           mkdir -p badges
           mv badge.json badges/badge.json
 
+      - name: Upload Badge JSON
+        uses: actions/upload-artifact@v2
+        with:
+          name: badges
+          path: badges
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -57,6 +63,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Download Badge JSON
+        uses: actions/download-artifact@v2
+        with:
+          name: badges
 
       - name: Commit and Push changes
         run: |
