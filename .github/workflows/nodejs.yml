@@ -66,7 +66,11 @@ jobs:
         with:
           ref: main
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          
+
+      - name: Delete Add-Badge Branch (Pre-Step)
+        run: |
+          git push --delete origin add-badge || echo "Branch does not exist"
+
       - name: Download Badge JSON
         uses: actions/download-artifact@v2
         with:
