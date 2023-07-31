@@ -19,12 +19,14 @@ jobs:
           FILE_COUNT=$(./count_files.sh)
           echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
           echo "::set-output name=FILE_COUNT::$FILE_COUNT"
+
       - name: Update Badge
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           FILE_COUNT: ${{ needs.update-badge.outputs.file-count }}
         run: |
           git config --global user.name "GitHub Actions"
+          git fetch origin gh-pages
           git checkout -b gh-pages origin/gh-pages
           echo '{"message": "'"$FILE_COUNT"'"}' > badge.json
           git add badge.json
