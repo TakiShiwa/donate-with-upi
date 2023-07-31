@@ -16,65 +16,6 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
-
-      - name: Install Dependencies
-        run: npm install axios express
-
-      - name: Create index.js
-        run: |
-          echo "const express = require('express');" > index.js
-          echo "const axios = require('axios');" >> index.js
-          echo "const app = express();" >> index.js
-          echo "const PORT = process.env.PORT || 3000;" >> index.js
-          echo "const GITHUB_TOKEN = '${{ secrets.GITHUB_TOKEN }}';" >> index.js
-          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js  # Replace with your GitHub username
-          echo "const REPO_NAME = 'donate-with-upi';" >> index.js  # Replace with your GitHub repository name
-          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
-          echo "" >> index.js
-
-      - name: Install Project Dependencies
-        run: npm install
-
-      - name: Run Server
-        run: node index.js &
-
-      - name: Wait for Server to Start
-        run: sleep 3
-
-      - name: Create Badge
-        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
-
-      - name: Store Badge JSON
-        run: |
-          mkdir -p badges
-          mv badge.json badges/badge.json
-
-      - name: Upload Badge JSON
-        uses: actions/upload-artifact@v2
-        with:
-          name: badges
-          path: badges
-          
-
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Download Badge JSON
-        uses: actions/download-artifact@v2
-        with:
-          name: badges
-          path: badges
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
           node-version: '14'
 
       - name: Install Dependencies
@@ -115,6 +56,20 @@ jobs:
           name: badges
           path: badges
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Download Badge JSON
+        uses: actions/download-artifact@v2
+        with:
+          name: badges
+          path: badges
+
       - name: Set up Git credentials
         run: |
           git config --global user.email "action@github.com"
@@ -131,14 +86,11 @@ jobs:
           git push origin add-badge
 
       - name: Create Pull Request
-        run: |
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "title": "Add badge.json",
-              "body": "This pull request adds the badge.json file to display the file count in the README.",
-              "head": "add-badge",
-              "base": "main"
-            }' \
-            "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          commit-message: "Add badge.json"
+          branch: "add-badge"
+          title: "Add badge.json"
+          body: "This pull request adds the badge.json file to display the file count in the README."
+
