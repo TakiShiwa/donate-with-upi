@@ -63,6 +63,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          repository: git@github.com:TakiShiwa/donate-with-upi.git
 
       - name: Download Badge JSON
         uses: actions/download-artifact@v2
