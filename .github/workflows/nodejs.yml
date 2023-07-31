@@ -103,3 +103,11 @@ jobs:
               "base": "main"
             }' \
             "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
+          git checkout add-badge
+          git fetch origin
+          git merge origin/add-badge
+          git push origin add-badge
+
+
+
+
