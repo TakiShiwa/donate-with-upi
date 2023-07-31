@@ -44,6 +44,7 @@ jobs:
 
       - name: Create Badge
         run: |
+          mkdir -p badges
           echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
 
       - name: Store Badge JSON
