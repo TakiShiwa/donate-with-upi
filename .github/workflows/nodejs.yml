@@ -57,6 +57,7 @@ jobs:
           path: badges
           
 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -71,11 +72,54 @@ jobs:
           name: badges
           path: badges
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install axios express
+
+      - name: Create index.js
+        run: |
+          echo "const express = require('express');" > index.js
+          echo "const axios = require('axios');" >> index.js
+          echo "const app = express();" >> index.js
+          echo "const PORT = process.env.PORT || 3000;" >> index.js
+          echo "const GITHUB_TOKEN = '${{ secrets.PERSONAL_ACCESS_TOKEN }}';" >> index.js
+          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js  # Replace with your GitHub username
+          echo "const REPO_NAME = 'donate-with-upi';" >> index.js  # Replace with your GitHub repository name
+          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
+          echo "" >> index.js
+
+      - name: Install Project Dependencies
+        run: npm install
+
+      - name: Run Server
+        run: node index.js &
+
+      - name: Wait for Server to Start
+        run: sleep 3
+
+      - name: Create Badge
+        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+
+      - name: Store Badge JSON
+        run: |
+          mkdir -p badges
+          mv badge.json badges/badge.json
+
+      - name: Upload Badge JSON
+        uses: actions/upload-artifact@v2
+        with:
+          name: badges
+          path: badges
+
       - name: Set up Git credentials
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "${{ github.actor }}"
-          git config --global user.password "${{ secrets.GITHUB_TOKEN }}"
+          git config --global user.password "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
 
       - name: Create and Push Branch
         run: |
@@ -84,14 +128,12 @@ jobs:
           cp badges/* .
           git add .
           git commit -m "Add badge.json" || echo "No changes to commit"
-
-      - name: Push branch to GitHub (Not Recommended)
-        run: git push origin add-badge
+          git push origin add-badge
 
       - name: Create Pull Request
         run: |
           curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d '{
               "title": "Add badge.json",
