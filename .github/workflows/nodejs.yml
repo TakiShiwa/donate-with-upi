@@ -94,6 +94,12 @@ jobs:
           git add .
           git commit -m "Your commit message"
           git push origin new-add-badge
+
+          git checkout -b new-add-badge
+
+
+          git push origin new-add-badge
+
   
 
       - name: Create Pull Request
