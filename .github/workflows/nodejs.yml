@@ -56,6 +56,12 @@ jobs:
           name: badges
           path: badges
 
+      - name: Count Files
+        id: filecount
+        run: |
+          FILE_COUNT=$(ls -1q | wc -l)
+          echo "{\"count\": $FILE_COUNT}" > badges/badge.json
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -106,8 +112,8 @@ jobs:
           
       - name: Display Badge in README
         run: |
-          FILE_COUNT=$(cat badges/badge.json | jq -r '.message')
-          sed -i "s|![File Count Badge](https://img.shields.io/static/v1?label=Files&message=.*&color=blue)|![File Count Badge](https://img.shields.io/static/v1?label=Files&message=$FILE_COUNT&color=blue)|" README.md
+          FILE_COUNT=$(cat badges/badge.json | jq -r '.count')
+          sed -i "s|REPLACE_COUNT|$FILE_COUNT|" README.md
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
