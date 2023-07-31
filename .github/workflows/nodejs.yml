@@ -43,7 +43,8 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+        run: |
+          echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
 
       - name: Store Badge JSON
         run: |
@@ -64,7 +65,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: main
+          ref: add-badge
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Delete Add-Badge Branch (Pre-Step)
@@ -109,3 +110,10 @@ jobs:
             "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
       - name: Display Badge JSON Content
         run: cat badges/badge.json
+        
+      - name: Generate Badge Markdown
+        id: generate_badge
+        run: echo "![File Count Badge](https://img.shields.io/endpoint?url=$(cat badges/badge.json | jq -r '.endpoint'))" > badges/badge.md
+        
+      - name: Replace Badge in README.md
+        run: sed -i -e '/^\[!\[File Count Badge\].*\]/ {r badges/badge.md' -e 'd}' README.md
