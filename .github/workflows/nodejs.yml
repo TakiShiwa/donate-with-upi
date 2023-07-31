@@ -50,13 +50,6 @@ jobs:
           mkdir -p badges
           mv badge.json badges/badge.json
 
-      - name: Commit Badge JSON
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add badges
-          git commit -m "Add badge.json" || echo "No changes to commit"
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -65,8 +58,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: ${{ github.ref }}
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add badges
+          git commit -m "Add badge.json" || echo "No changes to commit"
+          git push origin main
