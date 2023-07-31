@@ -32,8 +32,7 @@ jobs:
           echo "const REPO_NAME = 'donate-with-upi';" >> index.js
           echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
           echo "" >> index.js
-          cat index.js >> index.js
-
+          
       - name: Install Project Dependencies
         run: npm install
 
