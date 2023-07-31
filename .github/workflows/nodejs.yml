@@ -107,3 +107,6 @@ jobs:
               "base": "main"
             }' \
             "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
+      - name: Display Badge JSON Content
+        run: cat badges/badge.json
+
