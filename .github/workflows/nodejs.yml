@@ -66,3 +66,5 @@ jobs:
           git add file-count.json
           git commit -m "Add file-count.json"
           git push origin test
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
