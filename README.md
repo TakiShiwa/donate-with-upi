@@ -1,6 +1,7 @@
 # Donate with UPI 💸
 
 
+![File Count Badge](https://img.shields.io/static/v1?label=Files&message=PLACEHOLDER&color=blue)
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
