@@ -11,15 +11,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-        with:
-          node-version: "16"
 
       - name: Count Files
         id: count_files
         run: |
           chmod +x count_files.sh
           FILE_COUNT=$(./count_files.sh)
-          echo "::set-output name=count::$FILE_COUNT"
+          echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
 
       - name: Update Badge
         run: |
