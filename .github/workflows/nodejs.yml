@@ -43,8 +43,7 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        run: |
-          echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
+        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
 
       - name: Store Badge JSON
         run: |
@@ -65,8 +64,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: add-badge
+          ref: main
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Delete Add-Badge Branch (Pre-Step)
+        run: |
+          git push --delete origin add-badge || echo "Branch does not exist"
 
       - name: Download Badge JSON
         uses: actions/download-artifact@v2
@@ -74,9 +77,35 @@ jobs:
           name: badges
           path: badges
 
-      - name: Generate Badge Markdown
-        id: generate_badge
-        run: echo "![File Count Badge](https://img.shields.io/endpoint?url=$(cat badges/badge.json | jq -r '.endpoint'))" > badges/badge.md
+      - name: Set up Git credentials
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.password "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
 
-      - name: Replace Badge in README.md
-        run: sed -i -e '/^\[!\[File Count Badge\].*\]/ {r badges/badge.md' -e 'd}' README.md
+      - name: Create and Push Branch
+        run: |
+          git checkout -b add-badge
+          mkdir -p badges
+          cp badges/* .
+          git add .
+          git commit -m "Add badge.json" || echo "No changes to commit"
+          git push origin add-badge
+
+      - name: Create Pull Request
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.password "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "title": "Add badge.json",
+              "body": "This pull request adds the badge.json file to display the file count in the README.",
+              "head": "add-badge",
+              "base": "main"
+            }' \
+            "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
+      - name: Display Badge JSON Content
+        run: cat badges/badge.json
