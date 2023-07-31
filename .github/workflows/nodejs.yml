@@ -19,35 +19,23 @@ jobs:
           node-version: '14'
 
       - name: Install Dependencies
-        run: npm install axios express
-
-      - name: Start Server
-        run: |
-          echo "const express = require('express');" >> index.js
-          echo "const axios = require('axios');" >> index.js
-          echo "const app = express();" >> index.js
-          echo "const PORT = process.env.PORT || 3000;" >> index.js
-          echo "const GITHUB_TOKEN = '${{ secrets.GITHUB_TOKEN }}';" >> index.js
-          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js
-          echo "const REPO_NAME = 'donate-with-upi';" >> index.js
-          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
-          echo "" >> index.js
-          
-      - name: Install Project Dependencies
         run: npm install
 
-      - name: Run Server
-        run: node index.js &
-        
-      - name: Wait for Server to Start
-        run: sleep 3
-
-      - name: Create Badge
+      - name: Create File Count Badge
         id: create_badge
-        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+        run: node file-counter/index.js
 
       - name: Use Badge Data
-        run: echo ${{ steps.create_badge.outputs.badge_data }} > file-count.json
+        id: badge_data
+        run: echo ::set-output name=badge_data::${{ steps.create_badge.outputs.stdout }}
 
       - name: Display Badge Data
-        run: cat file-count.json
+        run: echo ${{ steps.badge_data.outputs.badge_data }} > file-count.json
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add file-count.json
+          git commit -m "Update file count badge"
+          git push origin main
