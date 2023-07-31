@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '14'
 
       - name: Install Dependencies
         run: npm install axios express
@@ -28,10 +28,11 @@ jobs:
           echo "const app = express();" >> index.js
           echo "const PORT = process.env.PORT || 3000;" >> index.js
           echo "const GITHUB_TOKEN = '${{ secrets.GH_TOKEN }}';" >> index.js
-          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js  # Replace with your GitHub username
-          echo "const REPO_NAME = 'donate-with-upi';" >> index.js  # Replace with your GitHub repository name
-          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js
+          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js
+          echo "const REPO_NAME = 'donate-with-upi';" >> index.js
+          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js  # Update with the correct directory path
           echo "" >> index.js
+          cat index.js >> index.js
 
       - name: Install Project Dependencies
         run: npm install
@@ -43,4 +44,11 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        id: create
+        id: create_badge
+        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+
+      - name: Use Badge Data
+        run: echo ::set-output name=badge_data::$(cat badge.json)
+
+      - name: Display Badge Data
+        run: echo ${{ steps.create_badge.outputs.badge_data }}
