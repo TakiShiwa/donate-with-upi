@@ -47,7 +47,7 @@ jobs:
         run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
 
       - name: Use Badge Data
-        run: echo ::set-output name=badge_data::$(cat badge.json)
+        run: echo ${{ steps.create_badge.outputs.badge_data }} > file-count.json
 
       - name: Display Badge Data
-        run: echo ${{ steps.create_badge.outputs.badge_data }}
+        run: cat file-count.json
