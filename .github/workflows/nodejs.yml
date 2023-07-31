@@ -43,18 +43,25 @@ jobs:
         run: sleep 3
 
       - name: Create Badge
-        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+        run: |
+          echo '{ "schemaVersion": 1, "label": "Files", "message": "'"$(ls -A Button/SVG | wc -l)"'", "color": "blue" }' > badges/badge.json
 
       - name: Store Badge JSON
         run: |
           mkdir -p badges
           mv badge.json badges/badge.json
 
-      - name: Upload Badge JSON
-        uses: actions/upload-artifact@v2
-        with:
-          name: badges
-          path: badges
+      - name: Set up Git credentials
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.password "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+
+      - name: Commit Badge JSON
+        run: |
+          git add badges/badge.json
+          git commit -m "Add badge.json"
+          git push origin add-badge
 
   deploy:
     needs: build
