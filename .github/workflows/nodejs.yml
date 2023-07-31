@@ -62,9 +62,10 @@ jobs:
           git config user.email "judhistiram@protonmail.com"
 
       - name: Commit and Push Changes
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git add file-count.json
           git commit -m "Add file-count.json"
           git push origin test
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
