@@ -6,5 +6,5 @@ DIRECTORY_PATH="Button/SVG"
 # Count the number of files in the target directory
 FILE_COUNT=$(find "$DIRECTORY_PATH" -type f | wc -l)
 
-# Output the file count
-echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
+# Set the output variable for the next step in the workflow
+echo "::set-output name=FILE_COUNT::$FILE_COUNT"
