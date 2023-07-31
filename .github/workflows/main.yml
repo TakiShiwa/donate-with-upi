@@ -1,8 +1,9 @@
 name: Update File Count Badge
 
 on:
-  schedule:
-    - cron: "0 * * * *"
+  push:
+    branches:
+      - main 
 
 jobs:
   update-badge:
@@ -14,13 +15,13 @@ jobs:
       - name: Count Files
         id: count_files
         run: |
-          DIRECTORY_PATH="Button/SVG"
-          FILE_COUNT=$(find "$DIRECTORY_PATH" -type f | wc -l)
+          chmod +x count_files.sh
+          FILE_COUNT=$(./count_files.sh)
           echo "::set-output name=count::$FILE_COUNT"
 
       - name: Update Badge
-        uses: shieldsio/github-action@master
-        with:
-          path: ${{ github.repository }}
-          key: files
-          value: ${{ steps.count_files.outputs.count }}
+        run: |
+          curl -X POST "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+               -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               -d '{"event_type": "update-badge"}'
