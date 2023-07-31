@@ -68,11 +68,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: badges
+          path: badges
 
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add badges
+          cp -R badges/* .  # Copy the contents of badges to the root of the repository
+          git add .
           git commit -m "Add badge.json" || echo "No changes to commit"
           git push origin main
