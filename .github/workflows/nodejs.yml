@@ -22,8 +22,10 @@ jobs:
         run: npm install axios express
 
       - name: Create index.js
+        run: echo "const express = require('express');" > index.js
+
+      - name: Append to index.js
         run: |
-          echo "const express = require('express');" > index.js
           echo "const axios = require('axios');" >> index.js
           echo "const app = express();" >> index.js
           echo "const PORT = process.env.PORT || 3000;" >> index.js
