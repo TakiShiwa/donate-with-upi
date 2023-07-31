@@ -86,11 +86,17 @@ jobs:
           git push origin add-badge
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          commit-message: "Add badge.json"
-          branch: "add-badge"
-          title: "Add badge.json"
-          body: "This pull request adds the badge.json file to display the file count in the README."
-
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.password "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "title": "Add badge.json",
+              "body": "This pull request adds the badge.json file to display the file count in the README.",
+              "head": "add-badge",
+              "base": "main"
+            }' \
+            "https://api.github.com/repos/TakiShiwa/donate-with-upi/pulls"
