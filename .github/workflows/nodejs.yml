@@ -81,6 +81,8 @@ jobs:
         with:
           base: "main"
           head: "add-badge"
+
+      - name: Copy Badge JSON and Commit
         run: |
           mkdir -p badges
           cp badges/* .
