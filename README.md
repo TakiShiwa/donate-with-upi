@@ -1,6 +1,6 @@
 # Donate with UPI 💸
 
-![Files](https://img.shields.io/endpoint?url=https://img.shields.io/endpoint?url=https://github.com/TakiShiwa/donate-with-upi/raw/main/badge.json)
+![Files](https://raw.githubusercontent.com/TakiShiwa/donate-with-upi/main/badges/badge.json)
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
