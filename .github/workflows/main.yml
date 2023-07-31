@@ -1,4 +1,4 @@
-name: Update File Count Badge
+name: Generate File Count Badge
 
 on:
   push:
@@ -6,29 +6,49 @@ on:
       - main
 
 jobs:
-  update-badge:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Count Files
-        id: count_files
-        run: |
-          chmod +x count_files.sh
-          FILE_COUNT=$(./count_files.sh)
-          echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
-          echo "::set-output name=FILE_COUNT::$FILE_COUNT"
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
 
-      - name: Update Badge
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          FILE_COUNT: ${{ needs.update-badge.outputs.file-count }}
+      - name: Install Dependencies
+        run: npm install axios express
+
+      - name: Create index.js
         run: |
-          git config --global user.name "GitHub Actions"
-          git fetch origin gh-pages
-          git checkout -b gh-pages origin/gh-pages
-          echo '{"message": "'"$FILE_COUNT"'"}' > badge.json
-          git add badge.json
-          git commit -m "Update file count badge: $FILE_COUNT files"
-          git push origin gh-pages
+          echo "const express = require('express');" > index.js
+          echo "const axios = require('axios');" >> index.js
+          echo "const app = express();" >> index.js
+          echo "const PORT = process.env.PORT || 3000;" >> index.js
+          echo "const GITHUB_TOKEN = '${{ secrets.GH_TOKEN }}';" >> index.js
+          echo "const REPO_OWNER = 'TakiShiwa';" >> index.js
+          echo "const REPO_NAME = 'donate-with-upi';" >> index.js
+          echo "const DIRECTORY_PATH = 'Button/SVG';" >> index.js  # Update with the correct directory path
+          echo "" >> index.js
+          cat index.js >> index.js
+
+      - name: Install Project Dependencies
+        run: npm install
+
+      - name: Run Server
+        run: node index.js &
+
+      - name: Wait for Server to Start
+        run: sleep 3
+
+      - name: Create Badge
+        id: create_badge
+        run: curl -fsSL -o badge.json https://img.shields.io/endpoint?url=http://localhost:3000/file-count-badge
+
+      - name: Use Badge Data
+        run: echo ::set-output name=badge_data::$(cat badge.json)
+
+      - name: Display Badge Data
+        run: echo ${{ steps.create_badge.outputs.badge_data }}
