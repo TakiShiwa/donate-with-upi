@@ -45,7 +45,8 @@ The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npc
 
 ### 🤝 Contributing 
 
-Want to contribute? Follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) and feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues) for suggestions or support. 
+- Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md) 
+- Feel free to [open an issue](https://github.com/TakiShiwa/donate-with-upi/issues) for suggestions or support. 
 
 &nbsp;
 
