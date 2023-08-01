@@ -1,3 +1,7 @@
+
+<p align="center">
+🙏Welcome! 
+</p>
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="80" alt="Donate with UPI" />
 </p>
@@ -8,10 +12,6 @@
   
 &nbsp;
 
-
-<p align="center">
-🙏Welcome! 
-</p>
 <p align="center">
 Discover a collection of beautifully designed UPI donation buttons in SVG and PNG formats. Easily integrate them into your projects, README, websites, and more to encourage donations and promote your cause.
 </p>
