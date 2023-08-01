@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="80" alt="Donate with UPI" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="90" alt="Donate with UPI" />
 </p>
 
 <p align="center">
@@ -25,12 +25,12 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
 ### 🔘 Example Buttons
 
 <p align="center">
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-light-blue-01.svg" height="60" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="60" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="60" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="60" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="60" alt="Button Preview" />
- <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-01.svg" height="60" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-light-blue-01.svg" height="50" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="50" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="50" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="50" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="50" alt="Button Preview" />
+ <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-01.svg" height="50" alt="Button Preview" />
 </p>
 
 &nbsp;
