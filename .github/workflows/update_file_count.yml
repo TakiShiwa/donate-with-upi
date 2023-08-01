@@ -3,7 +3,7 @@ name: Update File Count
 on:
   push:
     branches:
-      - main  # Adjust the branch name as per your repository's branch name (e.g., main, master, etc.)
+      - main 
 
 jobs:
   update_count:
