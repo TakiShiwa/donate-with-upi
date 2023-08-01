@@ -9,8 +9,9 @@
 &nbsp;
   
 <p align="center">
-🙏
-Welcome to the Donate with UPI Button Repository! Here, you'll find a collection of beautifully designed buttons in SVG and PNG formats that you can easily integrate into your projects, READMEs, websites, and more. These buttons are specially created to encourage donations through UPI (Unified Payments Interface) and can be used to promote your cause or fundraising initiatives.
+**Donate with UPI Button Repository**
+
+Discover a collection of beautifully designed UPI donation buttons in SVG and PNG formats. Easily integrate them into your projects, README, websites, and more to encourage donations and promote your cause.
 </p>
 
 &nbsp;
