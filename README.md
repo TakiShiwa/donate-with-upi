@@ -13,6 +13,8 @@
 Welcome to the Donate with UPI Button Repository! Here, you'll find a collection of beautifully designed buttons in SVG and PNG formats that you can easily integrate into your projects, READMEs, websites, and more. These buttons are specially created to encourage donations through UPI (Unified Payments Interface) and can be used to promote your cause or fundraising initiatives.
 </p>
 
+&nbsp;
+
 ### 🛠️ How to Use 
 
 Seamless integration! Simply choose your desired button from [`Button`](https://github.com/TakiShiwa/donate-with-upi/edit/main/Button) folder , copy its URL, and paste it into your project's README, website, or application using markdown or HTML image syntax. Use SVG format for better quality.
@@ -26,7 +28,7 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="60" alt="Button Preview" />
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="60" alt="Button Preview" />
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-01.svg" height="60" alt="Button Preview" />
-<center>
+</center>
 
 ### 📝 License 
 
