@@ -1,11 +1,9 @@
-# Donate with UPI 💸
-
 <p align="center">
-<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fmain%2Ffile_count.json&query=%24.file_count&style=for-the-badge&label=No.%20of%20Buttons&labelColor=24273a&color=c6a0f6">
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
+<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fmain%2Ffile_count.json&query=%24.file_count&style=for-the-badge&label=No.%20of%20Buttons&labelColor=24273a&color=c6a0f6">
 </p>
 
 ## Donate with UPI Button Repository
