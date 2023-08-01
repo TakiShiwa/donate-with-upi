@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="80" alt="Donate with UPI" />
 </p>
 
 <p align="center">
@@ -17,14 +17,14 @@ Welcome to the Donate with UPI Button Repository! Here, you'll find a collection
 Seamless integration! Simply choose your desired button from [`Button`](https://github.com/TakiShiwa/donate-with-upi/edit/main/Button) folder , copy its URL, and paste it into your project's README, website, or application using markdown or HTML image syntax. Use SVG format for better quality.
 
 ### Example Buttons
-<p align="center:">
+<h6 align="center:">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-light-blue-01.svg" height="72" alt="Button Preview" />
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="72" alt="Button Preview" />
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="72" alt="Button Preview" />
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="72" alt="Button Preview" />
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="72" alt="Button Preview" />
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-01.svg" height="72" alt="Button Preview" />
-</p>
+</h6>
 
 ## License 📝
 
