@@ -22,7 +22,7 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
 &nbsp;
 
 
-### Example Buttons
+### 🔘 Example Buttons
 
 <p align="center">
  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-light-blue-01.svg" height="60" alt="Button Preview" />
