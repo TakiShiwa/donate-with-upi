@@ -1,6 +1,6 @@
 # Donate with UPI 💸
 
-<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fmain%2Ffiles_count.json&query=%24.message&style=for-the-badge&label=No.of%20Buttons&labelColor=1e1e2e&color=cba6f7">
+
 
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="100" alt="Donate with UPI" />
