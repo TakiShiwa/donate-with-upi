@@ -5,7 +5,8 @@
 <p align="center">
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FTakiShiwa%2Fdonate-with-upi%2Fmain%2Ffile_count.json&query=%24.file_count&style=for-the-badge&label=No.%20of%20Buttons&labelColor=24273a&color=c6a0f6">
 </p>
-
+&nbsp;
+  
 <p align="center">
 Welcome to the Donate with UPI Button Repository! Here, you'll find a collection of beautifully designed buttons in SVG and PNG formats that you can easily integrate into your projects, READMEs, websites, and more. These buttons are specially created to encourage donations through UPI (Unified Payments Interface) and can be used to promote your cause or fundraising initiatives.
 </p>
