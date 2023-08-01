@@ -15,7 +15,7 @@ jobs:
 
       - name: Count files and update JSON
         run: |
-          FILE_COUNT=$(find path/to/your/directory -type f | wc -l)
+          FILE_COUNT=$(find Button/SVG -type f | wc -l)
           echo "{\"file_count\": $FILE_COUNT}" > file_count.json
 
       - name: Commit and push changes
