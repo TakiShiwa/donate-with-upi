@@ -9,6 +9,7 @@
 &nbsp;
   
 <p align="center">
+🙏
 Welcome to the Donate with UPI Button Repository! Here, you'll find a collection of beautifully designed buttons in SVG and PNG formats that you can easily integrate into your projects, READMEs, websites, and more. These buttons are specially created to encourage donations through UPI (Unified Payments Interface) and can be used to promote your cause or fundraising initiatives.
 </p>
 
@@ -19,15 +20,15 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
 ### Example Buttons
 <h6 align="center:">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-light-blue-01.svg" height="60" alt="Button Preview" />
-  .
+  
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-blue-01.svg" height="60" alt="Button Preview" />
-  .
+  
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-green-01.svg" height="60" alt="Button Preview" />
-  .
+  
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" height="60" alt="Button Preview" />
-  .
+  
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-01.svg" height="60" alt="Button Preview" />
-  .
+  
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-grey-01.svg" height="60" alt="Button Preview" />
 </h6>
 
