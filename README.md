@@ -15,11 +15,13 @@ Welcome to the Donate with UPI Button Repository! Here, you'll find a collection
 
 &nbsp;
 
+
 ### 🛠️ How to Use 
 
 Seamless integration! Simply choose your desired button from [`Button`](https://github.com/TakiShiwa/donate-with-upi/edit/main/Button) folder , copy its URL, and paste it into your project's README, website, or application using markdown or HTML image syntax. Use SVG format for better quality.
 
 &nbsp;
+
 
 ### Example Buttons
 
@@ -34,11 +36,13 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
 
 &nbsp;
 
+
 ### 📝 License 
 
 The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). These handcrafted UPI donation buttons are released under the [MIT License](LICENSE). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
 &nbsp;
+
 
 ### 🤝 Contributing 
 
@@ -46,12 +50,14 @@ Want to contribute? Follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) 
 
 &nbsp;
 
+
 ### 🙏 Acknowledgments 
 
 - Every button is created under UPI guidelines. Learn more [here](https://www.bhimupi.org.in/sites/default/files/BHIM%20UPI%20Guidelines.pdf).
 - Thanks to [andreostrovsky's](https://github.com/andreostrovsky/donate-with-paypal/tree/master) design language for inspiring these UPI donation buttons.
 
 &nbsp;
+
 
 ### 💖 Donate 
 
