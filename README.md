@@ -38,7 +38,9 @@ Seamless integration! Simply choose your desired button from [`Button`](https://
 
 ### 📝 License 
 
-The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). These handcrafted UPI donation buttons are released under the [MIT License](LICENSE). You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
+- The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/). 
+- These handcrafted UPI donation buttons are released under the [MIT License](LICENSE).
+- You are free to use, modify, and distribute the buttons in your projects without any attribution required. However, a credit to this repository is highly appreciated.
 
 &nbsp;
 
