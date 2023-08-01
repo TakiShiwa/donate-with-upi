@@ -1,0 +1,24 @@
+name: Update File Count
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as per your repository's main branch name
+
+jobs:
+  update_count:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Count files and update JSON
+        run: |
+          FILE_COUNT=$(find path/to/your/directory -type f | wc -l)
+          echo "{\"file_count\": $FILE_COUNT}" > file_count.json
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update file count [skip ci]"
