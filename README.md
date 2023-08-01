@@ -1,7 +1,3 @@
-
-<p align="center">
-🙏Welcome! 
-</p>
 <p align="center">
   <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="80" alt="Donate with UPI" />
 </p>
