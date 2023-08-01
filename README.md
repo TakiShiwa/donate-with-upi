@@ -9,9 +9,6 @@
 &nbsp;
   
 <p align="center">
-  
-**Donate with UPI Button Repository**
-
 Discover a collection of beautifully designed UPI donation buttons in SVG and PNG formats. Easily integrate them into your projects, README, websites, and more to encourage donations and promote your cause.
 
 </p>
