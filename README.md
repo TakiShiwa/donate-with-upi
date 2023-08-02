@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-black-02.svg" height="90" alt="Donate with UPI" />
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-machito-mauve-03.svg" height="90" alt="Donate with UPI" />
 </p>
 
 <p align="center">
