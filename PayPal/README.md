@@ -4,5 +4,7 @@
 Here is the catppuccin-machito theme one
 
 ### Buttons
-![Buttons]("https://github.com/TakiShiwa/donate-with-upi/blob/main/PayPal/blue%20copy-machito-01.svg")
 
+<p align="center">
+  <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/PayPal/blue%20copy-machito-01.svg" height="50" alt="Donate with UPI" />
+</p>
