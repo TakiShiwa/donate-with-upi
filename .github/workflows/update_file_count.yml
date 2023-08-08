@@ -3,7 +3,9 @@ name: Update File Count
 on:
   push:
     branches:
-      - main 
+      - main
+    paths:
+      - 'Button/SVG/**'  # Specify the path to the Button/SVG directory and its subdirectories
 
 jobs:
   update_count:
