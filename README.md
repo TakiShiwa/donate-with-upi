@@ -9,7 +9,7 @@
 &nbsp;
 
 <p align="center">
-Welcome to the Donate with UPI Button Repository! <br> Discover beautifully designed SVG and PNG buttons to easily integrate into your projects, README, websites, and more.<br> These buttons are specially created to encourage UPI donations and promote your cause effortlessly.
+Welcome to the Donate with UPI Button Repository! <br> Discover beautifully designed SVG and PNG buttons to easily integrate into your projects, README, websites, and more. These buttons are specially created to encourage UPI donations and promote your cause effortlessly.
 </p>
 
 &nbsp;
