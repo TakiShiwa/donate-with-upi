@@ -1,5 +1,5 @@
-<h1 align = center>
-# Contribution Guidelines
+<h1 align = "center">
+Contribution Guidelines
 </h1>
 
 Thank you for considering contributing to the Donate with UPI Repository! Your contributions help make this project more valuable for the developer community. Here are some guidelines to get you started:
