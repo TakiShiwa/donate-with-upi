@@ -2,7 +2,7 @@
 
 Thank you for considering contributing to the Donate with UPI Repository! Your contributions help make this project more valuable for the developer community. Here are some guidelines to get you started:
 
-## Types of Contributions
+### Types of Contributions
 
 You can contribute in various ways, including:
 
@@ -11,17 +11,17 @@ You can contribute in various ways, including:
 - Documentation Improvements
 - Bug Reports and Feedback
 
-## Code Style and Quality
+### Code Style and Quality
 
 - Use SVG format for buttons
 - Keep the design minimal and visually appealing
 - Optimize SVG files for appropriate size and quality.
 
-## License
+### License
 
 The UPI logo is a copyrighted and trademarked property of [NPCI](https://www.npci.org.in/).
 Your contributions will be released under the [MIT License](LICENSE).
 
 ---
 
-Thank you for your interest in contributing to this project.Let's work together to enhance the beauty and impact of these UPI donation buttons! 🙏💖
+Thank you for your interest in contributing to this project. 🙏💖
